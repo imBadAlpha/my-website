@@ -41,6 +41,24 @@
     border-radius: 1rem;
     padding: 2rem;
     text-align: center;
+    opacity: 0;
+    filter: blur(5px);
+    transform: translateX(100%);
+    transition: all 1.2s;
+}
+
+.about__card:nth-child(2) {
+    transition-delay: 200ms;
+}
+
+.about__card:nth-child(3) {
+    transition-delay: 400ms;
+}
+
+.show__about__card {
+    opacity: 1;
+    filter: blur(0);
+    transform: translateX(0);
 }
 
 .about__card:hover {

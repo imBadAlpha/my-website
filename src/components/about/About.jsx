@@ -4,8 +4,19 @@ import ME from '../../assets/images/me-about.jpg'
 import { FaAward } from 'react-icons/fa'
 import { FiUsers } from 'react-icons/fi'
 import { VscFolderLibrary } from 'react-icons/vsc'
+import useAnimate from '../Animate';
 
 const About = () => {
+  useAnimate(
+    (target, isIntersecting) => {
+      if (isIntersecting) {
+        target.classList.add('show__about__card');
+      } else {
+        target.classList.remove('show__about__card');
+      }
+    },
+    '.about__card'
+  );
   return (
     <section id='about'>
       <h5>Get to Know</h5>

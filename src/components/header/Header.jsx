@@ -3,8 +3,31 @@ import './header.css'
 import CTA from './CTA'
 import ME from '../../assets/images/me.png'
 import HeaderSocials from './HeaderSocials'
+import useAnimate from '../Animate';
 
 const Header = () => {
+  useAnimate(
+    (target, isIntersecting) => {
+      if (isIntersecting) {
+        target.classList.add('show__container');
+      } else {
+        target.classList.remove('show__container');
+      }
+    },
+    '.container'
+  );
+
+  useAnimate(
+    (target, isIntersecting) => {
+      if (isIntersecting) {
+        target.classList.add('show__me');
+      } else {
+        target.classList.remove('show__me');
+      }
+    },
+    '.me'
+  );
+
   return (
     <header>
       <div className='container header__container'>
