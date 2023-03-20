@@ -20,7 +20,7 @@
 
     --transition: all 400ms ease;
 
-    --container-width-lg: 100%;
+    --container-width-lg: 75%;
     --container-width-md: 86%;
     --container-width-sm: 90%;
 }
@@ -41,17 +41,21 @@ html {
     color: var(--color-black);
     line-height: 1.7;
     height: 100%;
+    background: #F2CD5C;
     background-image: url('./assets/images/bg-image.svg');
-    background-position: center;
     background-repeat: no-repeat;
+    background-attachment: fixed;
     background-size: cover;
+    /* background-image: linear-gradient(to bottom, #F2921D, #0e4166);
+    background: rgb(242,205,92);
+    background: linear-gradient(180deg, rgba(242,205,92,1) 0%, rgba(76,190,255,1) 50%); */
 }
 
 /* ============= General Styles ============== */
 
 .container {
     width: var(--container-width-lg);
-    margin: 0;
+    margin: 0 auto;
 }
 
 h1, h2, h3, h4, h5 {
@@ -101,13 +105,13 @@ a:hover {
 }
 
 .btn:hover {
-    background: var(--color-bg);
+    background: var(--color-bg-variant);
     color: var(--color-primary-variant);
     border-color: transparent;
 }
 
 .btn-primary {
-    background: var(--color-primary-variant);
+    background: var(--color-primary);
     color: var(--color-bg);
 }
 
@@ -119,6 +123,14 @@ img {
 
 /* ============= Media Queries (Medium Devices) ============== */
 @media screen and (max-width: 1024px) {
+    .container {
+        width: var(--container-width-md);
+    }
+
+    section > h2 {
+        margin-bottom: 2rem;
+    }
+    
     header {
         height: 68vh;
     }
@@ -127,6 +139,14 @@ img {
 
 /* ============= Media Queries (Small Devices) ============== */
 @media screen and (max-width: 600px) {
+    .container {
+        width: var(--container-width-sm);
+    }
+
+    section > h2 {
+        margin-bottom: 2rem;
+    }
+    
     header {
         height: 100vh;
     }
