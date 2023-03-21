@@ -10,9 +10,10 @@ const Header = () => {
     (target, isIntersecting) => {
       if (isIntersecting) {
         target.classList.add('show__container');
-      } else {
-        target.classList.remove('show__container');
-      }
+      } 
+      // else {
+      //   target.classList.remove('show__container');
+      // }
     },
     '.container'
   );
@@ -21,7 +22,8 @@ const Header = () => {
     (target, isIntersecting) => {
       if (isIntersecting) {
         target.classList.add('show__me');
-      } else {
+      } 
+      else {
         target.classList.remove('show__me');
       }
     },
