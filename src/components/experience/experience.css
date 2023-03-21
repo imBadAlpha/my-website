@@ -36,6 +36,7 @@
     gap: 1rem;
     opacity: 0;
     filter: blur(5px);
+    transform: translateX(-100%);
     transition: all 1.2s;
 }
 
@@ -86,6 +87,7 @@
 .show__experience__details {
     opacity: 1;
     filter: blur(0);
+    transform: translateX(0);
 }
 
 .experience__icon {
