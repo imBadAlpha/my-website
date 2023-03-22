@@ -14,7 +14,7 @@
 }
 
 .experience__container > div:hover {
-    background: transparent;
+    background: var(--color-bg);
     border-color: var(--color-primary);
     cursor: default;
 }
@@ -93,4 +93,35 @@
 .experience__icon {
     margin-top: 6px;
     color: var(--color-primary);
+}
+
+/* ============= Media Queries (Medium Devices) ============== */
+@media screen and (max-width: 1024px) {
+    .experience__container {
+        grid-template-columns: 1fr;
+        gap: 0;
+    }
+
+    .experience__container > div {
+        width: 80%;
+        padding: 2rem;
+        margin: auto;
+    }
+
+    .experience__content {
+        padding: 1rem;
+    }
+
+}
+
+/* ============= Media Queries (Small Devices) ============== */
+@media screen and (max-width: 600px) {
+    .experience__container {
+        gap: 1rem;
+    }
+
+    .experience__container > div {
+        width: 100%;
+        padding: 2rem 1rem;
+    }
 }
