@@ -127,6 +127,7 @@ a:hover {
 }
 
 .btn-primary {
+    border: transparent;
     background: var(--color-primary);
     color: var(--color-bg);
 }
