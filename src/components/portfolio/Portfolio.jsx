@@ -7,6 +7,15 @@ import IMG4 from '../../assets/images/portfolio4.jpg'
 import IMG5 from '../../assets/images/portfolio5.png'
 import IMG6 from '../../assets/images/portfolio6.jpg'
 
+const data = [
+  {id: 1, "image": IMG1, title: "Project Alpha", github: "https://github.com", demo: "#"},
+  {id: 2, "image": IMG2, title: "Project Beta", github: "https://github.com", demo: "#"},
+  {id: 3, "image": IMG3, title: "Project Gamma", github: "https://github.com", demo: "#"},
+  {id: 4, "image": IMG4, title: "Project Delta", github: "https://github.com", demo: "#"},
+  {id: 5, "image": IMG5, title: "Project Epsilon", github: "https://github.com", demo: "#"},
+  {id: 6, "image": IMG6, title: "Project Zeta", github: "https://github.com", demo: "#"}
+]
+
 const Portfolio = () => {
   return (
     <section id='portfolio'>
@@ -14,71 +23,22 @@ const Portfolio = () => {
       <h2>Portfolio</h2>
 
       <div className='container portfolio__container'>
-        <article className='portfolio__item'>
-          <div className='portfolio__item-image'>
-            <img src={IMG1} alt="" />
-          </div>
-          <h3>This is a portfolio item here</h3>
-          <div className='portfolio__item-cta'>
-            <a href="https://github.com/imBadAlpha" className='btn' >Github</a>
-            <a href="#" className='btn btn-primary'>Live Demo</a>
-          </div>
-        </article>
-
-        <article className='portfolio__item'>
-          <div className='portfolio__item-image'>
-            <img src={IMG2} alt="" />
-          </div>
-          <h3>This is a portfolio item here</h3>
-          <div className='portfolio__item-cta'>
-            <a href="https://github.com/imBadAlpha" className='btn' >Github</a>
-            <a href="#" className='btn btn-primary'>Live Demo</a>
-          </div>
-        </article>
-
-        <article className='portfolio__item'>
-          <div className='portfolio__item-image'>
-            <img src={IMG3} alt="" />
-          </div>
-          <h3>This is a portfolio item here</h3>
-          <div className='portfolio__item-cta'>
-            <a href="https://github.com/imBadAlpha" className='btn' >Github</a>
-            <a href="#" className='btn btn-primary'>Live Demo</a>
-          </div>
-        </article>
-
-        <article className='portfolio__item'>
-          <div className='portfolio__item-image'>
-            <img src={IMG4} alt="" />
-          </div>
-          <h3>This is a portfolio item here</h3>
-          <div className='portfolio__item-cta'>
-            <a href="https://github.com/imBadAlpha" className='btn' >Github</a>
-            <a href="#" className='btn btn-primary'>Live Demo</a>
-          </div>
-        </article>
-
-        <article className='portfolio__item'>
-          <div className='portfolio__item-image'>
-            <img src={IMG5} alt="" />
-          </div>
-          <h3>This is a portfolio item here</h3>
-          <div className='portfolio__item-cta'>
-            <a href="https://github.com/imBadAlpha" className='btn' >Github</a>
-            <a href="#" className='btn btn-primary'>Live Demo</a>
-          </div>
-        </article>
-
-        <article className='portfolio__item'>
-          <div className='portfolio__item-image'>
-            <img src={IMG6} alt="" />
-          </div>
-          <h3>This is a portfolio item here</h3>
-          <div className='portfolio__item-cta'>
-            <a href="https://github.com/imBadAlpha" className='btn' >Github</a>
-            <a href="#" className='btn btn-primary'>Live Demo</a>
-          </div>
-        </article>
+        {
+          data.map(({id, image, title, github, demo}) => {
+            return(
+              <article key={id} className='portfolio__item'>
+                <div className='portfolio__item-image'>
+                  <img src={image} alt={title} />
+                </div>
+                <h3>{title}</h3>
+                <div className='portfolio__item-cta'>
+                  <a href={github} className='btn' >Github</a>
+                  <a href={demo} className='btn btn-primary'>Live Demo</a>
+                </div>
+              </article>
+            )
+          })
+        }
       </div>
 
     </section >
