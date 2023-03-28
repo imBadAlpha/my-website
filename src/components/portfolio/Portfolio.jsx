@@ -6,6 +6,7 @@ import IMG3 from '../../assets/images/portfolio3.jpg'
 import IMG4 from '../../assets/images/portfolio4.jpg'
 import IMG5 from '../../assets/images/portfolio5.png'
 import IMG6 from '../../assets/images/portfolio6.jpg'
+import useAnimate from '../Animate';
 
 const data = [
   {id: 1, "image": IMG1, title: "Project Alpha", github: "https://github.com", demo: "#"},
@@ -17,6 +18,18 @@ const data = [
 ]
 
 const Portfolio = () => {
+  useAnimate(
+    (target, isIntersecting) => {
+      if (isIntersecting) {
+        target.classList.add('show__portfolio__item');
+      } 
+      else {
+        target.classList.remove('show__portfolio__item');
+      }
+    },
+    '.portfolio__item'
+  );
+
   return (
     <section id='portfolio'>
       <h5>My Recent Work</h5>

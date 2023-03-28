@@ -6,7 +6,7 @@ import { MdDesignServices, MdOutlineContactSupport, MdPreview } from 'react-icon
 import { useState, useEffect} from 'react'
 
 const Nav = () => {
-  const [activeNav, setActiveNav] = useState('#');
+  const [activeNav, setActiveNav] = useState('#header');
 
   useEffect(() => {
     const handleScroll = () => {
@@ -33,7 +33,7 @@ const Nav = () => {
 
   return (
     <nav>
-      <a href="#" title='Home' onClick={() => setActiveNav('#')} className={activeNav === '#' ? 'active' : ''}><AiOutlineHome /></a>
+      <a href="#header" title='Home' onClick={() => setActiveNav('#header')} className={activeNav === '#header' ? 'active' : ''}><AiOutlineHome /></a>
       <a href="#about" title='About' onClick={() => setActiveNav('#about')} className={activeNav === '#about' ? 'active' : ''}><AiOutlineUser /></a>
       <a href="#experience" title='Experience' onClick={() => setActiveNav('#experience')} className={activeNav === '#experience' ? 'active' : ''}><BiBook /></a>
       <a href="#services" title='Services' onClick={() => setActiveNav('#services')} className={activeNav === '#services' ? 'active' : ''}><MdDesignServices /></a>

@@ -7,6 +7,10 @@ import emailjs from  'emailjs-com';
 
 const Contact = () => {
   const form = useRef();
+  const emailServiceId = process.env.REACT_APP_EMAIL_SERVICE_ID;
+  const emailTemplateId = process.env.REACT_APP_EMAIL_TEMPLATE_ID;
+  const apiKey = process.env.REACT_APP_API_PUBLIC_KEY;
+
 
   const sendEmail = (e) => {
     e.preventDefault();
@@ -29,7 +33,7 @@ const Contact = () => {
       return;
     }    
     
-    emailjs.sendForm('service_47spwdr', 'template_akur56g', form.current, 'RPXfCBv4ChtUFbFhd')
+    emailjs.sendForm(emailServiceId, emailTemplateId, form.current, apiKey)
       .then((result) => {
         console.log(result.text);
         const notification = document.querySelector('.form__notification');

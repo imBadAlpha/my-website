@@ -10,6 +10,34 @@
     border-radius: 2rem;
     border: 1px solid transparent;
     transition: var(--transition);
+    opacity: 0;
+    filter: blur(5px);
+    transition: all 1s;
+}
+
+.portfolio__item:nth-child(2) {
+    transition-delay: 200ms;
+}
+
+.portfolio__item:nth-child(3) {
+    transition-delay: 200ms;
+}
+
+.portfolio__item:nth-child(4) {
+    transition-delay: 200ms;
+}
+
+.portfolio__item:nth-child(5) {
+    transition-delay: 200ms;
+}
+
+.portfolio__item:nth-child(6) {
+    transition-delay: 200ms;
+}
+
+.show__portfolio__item {
+    opacity: 1;
+    filter: blur(0);
 }
 
 .portfolio__item:hover {

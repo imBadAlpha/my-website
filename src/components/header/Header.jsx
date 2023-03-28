@@ -9,13 +9,13 @@ const Header = () => {
   useAnimate(
     (target, isIntersecting) => {
       if (isIntersecting) {
-        target.classList.add('show__container');
+        target.classList.add('show__header__container');
       } 
       // else {
       //   target.classList.remove('show__container');
       // }
     },
-    '.container'
+    '.header__container'
   );
 
   useAnimate(
@@ -31,7 +31,7 @@ const Header = () => {
   );
 
   return (
-    <header>
+    <section id='header'>
       <div className='container header__container'>
         <h5>Hey there, I'm</h5>
         <h1>Romeo Nombre Jr.</h1>
@@ -45,7 +45,7 @@ const Header = () => {
 
         <a href="#contact" className='scroll__down'>Scroll Down</a>
       </div>
-    </header>
+    </section>
   )
 }
 
