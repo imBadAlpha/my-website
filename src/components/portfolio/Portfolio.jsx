@@ -9,9 +9,9 @@ import IMG6 from '../../assets/images/portfolio6.jpg'
 import useAnimate from '../Animate';
 
 const data = [
-  {id: 1, "image": IMG1, title: "Project Alpha", github: "https://github.com", demo: "#"},
-  {id: 2, "image": IMG2, title: "Project Beta", github: "https://github.com", demo: "#"},
-  {id: 3, "image": IMG3, title: "Project Gamma", github: "https://github.com", demo: "#"},
+  {id: 1, "image": IMG1, title: "USTC (Mini-Project)", github: "https://github.com/imBadAlpha/mini-project", demo: "https://imbadalpha.github.io/mini-project/"},
+  {id: 2, "image": IMG2, title: "QuikRide (Mini-Project)", github: "https://github.com/imBadAlpha/mini-project-2", demo: "https://imbadalpha.github.io/mini-project-2/"},
+  {id: 3, "image": IMG3, title: "Swapp (Full-Stack Web App)", github: "https://github.com/imBadAlpha/swapp", demo: "https://swapp.fun/"},
   {id: 4, "image": IMG4, title: "Project Delta", github: "https://github.com", demo: "#"},
   {id: 5, "image": IMG5, title: "Project Epsilon", github: "https://github.com", demo: "#"},
   {id: 6, "image": IMG6, title: "Project Zeta", github: "https://github.com", demo: "#"}
@@ -45,8 +45,8 @@ const Portfolio = () => {
                 </div>
                 <h3>{title}</h3>
                 <div className='portfolio__item-cta'>
-                  <a href={github} className='btn' >Github</a>
-                  <a href={demo} className='btn btn-primary'>Live Demo</a>
+                  <a href={github} className='btn' target='_blank'>Github</a>
+                  <a href={demo} className='btn btn-primary' target='_blank'>Live Demo</a>
                 </div>
               </article>
             )

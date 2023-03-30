@@ -30,27 +30,31 @@ const Services = () => {
           <ul className='service__list'>
             <li>
               <BiCheck className='service_list-icon'/>
-              <p>Lorem, ipsum dolor sit amet consetreasdfadf</p>
+              <p>Conduct user research to understand user needs and preferences</p>
             </li>
             <li>
               <BiCheck className='service_list-icon'/>
-              <p>Lorem, ipsum dolor sit amet consetreasdfadf</p>
+              <p>Develop user personas to represent your target audience</p>
             </li>
             <li>
               <BiCheck className='service_list-icon'/>
-              <p>Lorem, ipsum dolor sit amet consetreasdfadf</p>
+              <p>Create wireframes and prototypes to visualize and test user interface design</p>
             </li>
             <li>
               <BiCheck className='service_list-icon'/>
-              <p>Lorem, ipsum dolor sit amet consetreasdfadf</p>
+              <p>Design user interface elements such as buttons, menus, forms, and icons</p>
             </li>
             <li>
               <BiCheck className='service_list-icon'/>
-              <p>Lorem, ipsum dolor sit amet consetreasdfadf</p>
+              <p>Develop user-friendly navigation structures to enhance user experience</p>
             </li>
             <li>
               <BiCheck className='service_list-icon'/>
-              <p>Lorem, ipsum dolor sit amet consetreasdfadf</p>
+              <p>Apply responsive design principles to ensure the interface works on different devices</p>
+            </li>
+            <li>
+              <BiCheck className='service_list-icon'/>
+              <p>Apply best practices for accessibility and usability to improve the overall user experience</p>
             </li>
           </ul>
         </article>
@@ -63,27 +67,39 @@ const Services = () => {
           <ul className='service__list'>
             <li>
               <BiCheck className='service_list-icon'/>
-              <p>Lorem, ipsum dolor sit amet consetreasdfadf</p>
+              <p>Develop websites using HTML, CSS, and JavaScript frameworks such as React</p>
             </li>
             <li>
               <BiCheck className='service_list-icon'/>
-              <p>Lorem, ipsum dolor sit amet consetreasdfadf</p>
+              <p>Develop and Deploy Full-Stack Web Applications with PHP Laravel Framework</p>
             </li>
             <li>
               <BiCheck className='service_list-icon'/>
-              <p>Lorem, ipsum dolor sit amet consetreasdfadf</p>
+              <p>Implement back-end server-side logic using Node.js and Express</p>
             </li>
             <li>
               <BiCheck className='service_list-icon'/>
-              <p>Lorem, ipsum dolor sit amet consetreasdfadf</p>
+              <p>Develop RESTful APIs to communicate between client and server</p>
             </li>
             <li>
               <BiCheck className='service_list-icon'/>
-              <p>Lorem, ipsum dolor sit amet consetreasdfadf</p>
+              <p>Applying React Front-end with different Back-end Frameworks like PHP Laravel and Python Flask </p>
             </li>
             <li>
               <BiCheck className='service_list-icon'/>
-              <p>Lorem, ipsum dolor sit amet consetreasdfadf</p>
+              <p>Designing and implementing different Auth preferences for accessing role-specific content</p>
+            </li>
+            <li>
+              <BiCheck className='service_list-icon'/>
+              <p>Create and manage databases using MySQL or MySQLite databases</p>
+            </li>
+            <li>
+              <BiCheck className='service_list-icon'/>
+              <p>Web App deployment and hosting live service</p>
+            </li>
+            <li>
+              <BiCheck className='service_list-icon'/>
+              <p>Implement third-party APIs such as payment gateways, social media, and geolocation services</p>
             </li>
           </ul>
         </article>
@@ -96,27 +112,23 @@ const Services = () => {
           <ul className='service__list'>
             <li>
               <BiCheck className='service_list-icon'/>
-              <p>Lorem, ipsum dolor sit amet consetreasdfadf</p>
+              <p>Develop content strategy based on audience needs and business goals</p>
             </li>
             <li>
               <BiCheck className='service_list-icon'/>
-              <p>Lorem, ipsum dolor sit amet consetreasdfadf</p>
+              <p>Create written content such as blog posts, articles, and product descriptionsLorem, ipsum dolor sit amet consetreasdfadf</p>
             </li>
             <li>
               <BiCheck className='service_list-icon'/>
-              <p>Lorem, ipsum dolor sit amet consetreasdfadf</p>
+              <p>Develop visual content such as infographics, illustrations, and animations</p>
             </li>
             <li>
               <BiCheck className='service_list-icon'/>
-              <p>Lorem, ipsum dolor sit amet consetreasdfadf</p>
+              <p>Produce video content such as tutorials, explainers, and product demos</p>
             </li>
             <li>
               <BiCheck className='service_list-icon'/>
-              <p>Lorem, ipsum dolor sit amet consetreasdfadf</p>
-            </li>
-            <li>
-              <BiCheck className='service_list-icon'/>
-              <p>Lorem, ipsum dolor sit amet consetreasdfadf</p>
+              <p>Analyze and measure content performance using analytics tools to improve content strategy and engagement</p>
             </li>
           </ul>
         </article>

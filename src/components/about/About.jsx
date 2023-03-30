@@ -1,6 +1,6 @@
 import React from 'react'
 import './about.css'
-import ME from '../../assets/images/me-about.jpg'
+import ME from '../../assets/images/me-about.png'
 import { FaAward } from 'react-icons/fa'
 import { FiUsers } from 'react-icons/fi'
 import { VscFolderLibrary } from 'react-icons/vsc'
@@ -34,24 +34,25 @@ const About = () => {
             <article className='about__card'>
               <FaAward className='about__icon'/>
               <h5>Experience</h5>
-              <small>3+ Years Working</small>
+              <small>3+ Years in Customer Service</small>
             </article>
             <article className='about__card'>
               <FiUsers className='about__icon'/>
-              <h5>Clients</h5>
-              <small>200+ Worldwide</small>
+              <h5>Communication</h5>
+              <small>Excellent Communication Skills in English</small>
             </article>
             <article className='about__card'>
               <VscFolderLibrary className='about__icon'/>
               <h5>Projects</h5>
-              <small>80+ Completed</small>
+              <small>6 Completed Projects</small>
             </article>
           </div>
           <p>
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut 
-            labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris 
-            nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate 
-            velit esse cillum dolore eu fugiat nulla pariatur. 
+            Hey there! I hope you had a wonderful time visiting my site. I have been a passionate programmer
+            ever since my high school days but unfortunately never had a chance or decided to turn this into a 
+            career back then. Not until recently. I've been spending the last 3 years knowing what there is to web development
+            and programming in general, and now I can finally say that I'm ready to be hired. In regards to the specifics
+            of my technical skills, feel free to look around below. Hoping to work with you soon!
           </p>
         </div>
       </div>

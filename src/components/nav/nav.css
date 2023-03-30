@@ -35,3 +35,18 @@ nav a.active {
     background: var(--color-primary-variant);
     color: var(--color-bg);
 }
+
+/* ============= Media Queries (Medium Devices) ============== */
+@media screen and (max-width: 1024px) {
+    nav {
+        left: 38%;
+    }
+
+}
+
+/* ============= Media Queries (Small Devices) ============== */
+@media screen and (max-width: 600px) {
+    nav {
+        left: 28%;
+    }
+}
