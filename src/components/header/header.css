@@ -59,16 +59,6 @@
     border-radius: 12rem 12rem 0 0;
     overflow: hidden;
     padding: 5rem 1.5rem 1.5rem 1.5rem;
-    opacity: 0;
-    filter: blur(5px);
-    transform: translateY(100%);
-    transition: all 1.2s;
-}
-
-.show__me {
-    opacity: 1;
-    filter: blur(0);
-    transform: translateY(0);
 }
 
 /* ============= Media Queries (Medium Devices) ============== */

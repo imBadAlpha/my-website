@@ -17,8 +17,8 @@ import 'swiper/css/pagination';
 const data = [
   {
     avatar: AVTR1, 
-    name: "Project Alpha",
-    review: 'Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. '
+    name: "Jane Doe",
+    review: 'As you can see there are no actual testimonials yet. Though if you hire Romeo as part of your team, you can then ask him to give you a spot in this section of the page. 😉'
   },
   {
     avatar: AVTR2, 

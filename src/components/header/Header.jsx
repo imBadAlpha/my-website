@@ -18,18 +18,6 @@ const Header = () => {
     '.header__container'
   );
 
-  useAnimate(
-    (target, isIntersecting) => {
-      if (isIntersecting) {
-        target.classList.add('show__me');
-      } 
-      else {
-        target.classList.remove('show__me');
-      }
-    },
-    '.me'
-  );
-
   return (
     <section id='header'>
       <div className='container header__container'>
